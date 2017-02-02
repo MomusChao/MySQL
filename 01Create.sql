@@ -1,5 +1,0 @@
-#01 Create a database
-
-CREATE DATABASE MyFirstDB;
-
-SHOW DATABASES;
