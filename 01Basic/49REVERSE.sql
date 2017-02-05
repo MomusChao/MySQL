@@ -1,0 +1,3 @@
+#49 REVERSE
+
+SELECT REVERSE(bang) FROM TableMo;
