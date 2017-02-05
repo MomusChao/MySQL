@@ -1,0 +1,3 @@
+#41 MySQL version
+
+SELECT VERSION();
