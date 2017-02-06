@@ -1,0 +1,4 @@
+#64 GROUP BY
+
+SELECT*FROM TableMo;
+SELECT*FROM TableMo GROUP BY bang;
