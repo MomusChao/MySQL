@@ -1,0 +1,40 @@
+#97 Create View with condition
+
+#create a table (table01)
+CREATE TABLE table01(ID VARCHAR(10), HEIGHT INT, Weight INT);
+INSERT INTO table01 VALUES('O903',190,40);
+INSERT INTO table01 VALUES('O902',170,30);
+INSERT INTO table01 VALUES('O901',173,50);
+INSERT INTO table01 VALUES('O904',181,80);
+INSERT INTO table01 VALUES('O902',178,110);
+INSERT INTO table01 VALUES('O908',173,64);
+INSERT INTO table01 VALUES('O904',177,63);
+INSERT INTO table01 VALUES('O909',165,62);
+INSERT INTO table01 VALUES('O900',166,70);
+select*FROM table01;
+
+#create a table (table02)
+CREATE TABLE table02(ID VARCHAR(10), NickName VARCHAR(10), SalesPerformance INT);
+INSERT INTO table02 VALUES('O901','Momus',40);
+INSERT INTO table02 VALUES('O902','John',30);
+INSERT INTO table02 VALUES('O903','Sabrina',50);
+INSERT INTO table02 VALUES('O904','Cindy',80);
+INSERT INTO table02 VALUES('O905','Ann',110);
+select*FROM table02;
+
+#create view
+CREATE VIEW V2
+	AS 
+SELECT table01.ID, table02.NickName, table01.HEIGHT
+	FROM table01
+JOIN table02
+	USING(ID)
+WHERE table01.HEIGHT>=175;
+
+
+#check View
+SELECT*FROM V2;
+
+DROP VIEW V2;
+DROP TABLE table01;
+DROP TABLE table02;
