@@ -1,0 +1,3 @@
+#108 Trigger: SHOW 
+
+SHOW TRIGGERS;
