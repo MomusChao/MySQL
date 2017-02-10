@@ -1,0 +1,5 @@
+#99 insert in View
+
+INSERT INTO V1 VALUES('Eva',62);
+
+SELECT*FROM V1;
