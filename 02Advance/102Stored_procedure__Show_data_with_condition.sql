@@ -1,0 +1,28 @@
+#102 show data with condition
+
+#create a table, and be called: TableMo
+CREATE TABLE TableMo(bang VARCHAR(10), uria INT, Tuki INT);
+INSERT INTO TableMo VALUES('A103',101,4);
+INSERT INTO TableMo VALUES('A102',54,5);
+INSERT INTO TableMo VALUES('A104',181,4);
+INSERT INTO TableMo VALUES('A101',184,4);
+INSERT INTO TableMo VALUES('A103',17,5);
+INSERT INTO TableMo VALUES('A101',300,5);
+INSERT INTO TableMo VALUES('A102',205,6);
+INSERT INTO TableMo VALUES('A104',93,5);
+INSERT INTO TableMo VALUES('A103',12,6);
+INSERT INTO TableMo VALUES('A107',87,6);
+
+SELECT*FROM TableMo;
+
+
+#create a stored procedure
+DELIMITER //
+CREATE PROCEDURE pr2(d INT)
+BEGIN
+	SELECT*FROM TableMo WHERE uria>=d;
+END
+//
+DELIMITER ;
+
+CALL pr2(200);
