@@ -1,0 +1,8 @@
+PK：primary key 主鍵
+NN：not null 非空值
+UQ：unique 唯一索引
+BIN：binary 二進位資料(比text更大)
+UN：unsigned 無符號（非負數）
+ZF：zero fill 填充0 (例如欄位內容是1, 則內容顯示為0001)
+AI：auto increment 自增
+
